@@ -1,17 +1,11 @@
+<?php $title = 'Bio';?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bio</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+  <?php include './components/head.php'; ?>
   </head>
   <body>
-    <ul class="nav-menu">
-      <li><a href="./index.html" id="nav">Home</a></li>
-      <li><a href="./bio.html" id="nav">Bio</a></li>
-      <li><a href="./about.html" id="nav">About</a></li>
-      <li><a href="./portfolio.html" id="nav">Portfolio</a></li>
-      <li><a href="./contact.html" id="nav">Contact</a></li>
-    </ul>
+  <?php include'./components/nav-menu.php';?>
     <h1>Bio</h1>
     <h2>Education</h2>
     <ul>
@@ -56,5 +50,8 @@
       <li>Photography</li>
       <li>Drawing</li>
     </ul>
+    <div class="footer">
+    <?php include './components/footer.php';?>
+    </div>
   </body>
 </html>

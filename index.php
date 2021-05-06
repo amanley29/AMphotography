@@ -1,19 +1,13 @@
+<?php $title = 'Home';?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+  <?php include './components/head.php'; ?>
   </head>
   <body>
-    <ul class="nav-menu">
-      <li><a href="./index.html" id="nav">Home</a></li>
-      <li><a href="./bio.html" id="nav">Bio</a></li>
-      <li><a href="./about.html" id="nav">About</a></li>
-      <li><a href="./portfolio.html" id="nav">Portfolio</a></li>
-      <li><a href="./contact.html" id="nav">Contact</a></li>
-    </ul>
+  <div class="container">
+  <?php include './components/nav-menu.php';?>
     <h1>AM Photography</h1>
-    <div class="container">
       <div class="row">
         <div class="col-sm-6">
           <h2 id="home">
@@ -32,6 +26,9 @@
           />
         </div>
       </div>
+    </div>
+    <div class="footer">
+    <?php include './components/footer.php';?>
     </div>
   </body>
 </html>
